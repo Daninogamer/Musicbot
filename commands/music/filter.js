@@ -11,7 +11,7 @@ module.exports = {
 
         const actualFilter = queue.getFiltersEnabled()[0];
 
-        if (!args[0]) return message.channel.send(`Si prega di specificare un filtro valido per abilitare o disabilitare ${message.author}... Riprova! ❌\n${actualFilter ? `Filtro corrente ${actualFilter} (${client.config.app.px}filtro ${actualFilter} per disabilitarlo).\n` : ''}`);
+        if (!args[0]) return message.channel.send(`Si prega di specificare un filtro valido da abilitare o disabilitare ${message.author}... Riprova! ❌\n${actualFilter ? `Filtro corrente ${actualFilter} (${client.config.app.px}filtro ${actualFilter} per disabilitarlo).\n` : ''}`);
 
         const filters = [];
 
@@ -28,6 +28,6 @@ module.exports = {
 
         await queue.setFilters(filtersUpdated);
 
-        message.channel.send(`Il filtro ${filter} è ora **${queue.getFiltersEnabled().includes(filter) ? 'enabled' : 'disabled'}** ✅\n*Ricorda che più lunga è la canzone, più tempo ci vorrà.*`);
+        message.channel.send(`Il filtro ${filter} è ora **${queue.getFiltersEnabled().includes(filter) ? 'Attivato' : 'Disattivato'}** ✅\n*Ricorda che più lunga è la canzone, più tempo ci vorrà.*`);
     },
 };
