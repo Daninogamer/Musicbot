@@ -1,13 +1,13 @@
 module.exports = {
     app: {
-        px: '?',
+        px: '.',
         token: 'XXX',
-        playing: 'sta riproducendo canzoni',
+        playing: 'Prefisso(?) riproducendo canzoni',
     },
 
     opt: {
         DJ: {
-            enabled: false,
+            enabled: true,
             roleName: 'DJ',
             commands: ['back', 'clear', 'loop', 'filter', 'pause', 'resume', 'skip', 'stop',]
         },
