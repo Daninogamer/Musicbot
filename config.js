@@ -1,6 +1,6 @@
 module.exports = {
     app: {
-        px: '.',
+        px: '?',
         token: 'XXX',
         playing: 'Prefisso(?) riproducendo canzoni',
     },
