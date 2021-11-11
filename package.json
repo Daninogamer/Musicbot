@@ -4,7 +4,7 @@
   "author": "Dani",
   "version": "6.0.0",
   "engines": {
-    "node": "16.10.0"},
+    "node": "17.1.0"},
   "repository": "",
   "description": "Bot della musica",
   "scripts": {
